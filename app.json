@@ -14,7 +14,7 @@
     "success_url": "https://dashboard.heroku.com/apps/",
     "stack": "container",
     "env":{
-        "AlphaSION": {
+        "Alpha Session": {
             "description": "Paste the session code you received after scanning the QR from https://replit.com/@BlackAmda/Queen-Amdi-QR-Code",
             "required": true
         },
@@ -38,7 +38,7 @@
             "required": true,
             "value": "default"
         },
-        "AMDI_CHAT": {
+        "ALPHA_CHAT": {
             "description": "Full Artificial intelligence(AI) based chat bot feature. Type 'true' to enable and type 'false' to disable.",
             "required": true,
             "value": "false"
@@ -80,7 +80,7 @@
         "CAP": {
             "description": "Caption of media files.",
             "required": true,
-            "value": "ᴳᵉⁿᵉʳᵃᵗᵉᵈ ᴮʸ Qᵘᵉᵉⁿ ᴬᵐᵈᶦ₂₀₂₂"
+            "value": "GₑₙₑᵣₐₜₑD BY BₗₐCₖ ₐₗₚₕₐ ₂₀₂₂"
         },
         "DEMOTE_MESSAGE": {
             "description": "The message that appears when typing the '.demote' command. If you do not want to change it, keep 'default'.",
@@ -113,17 +113,12 @@
         "LANGUAGE": {
             "description": "Bot language. Type EN for English and type SI for Sinhala.",
             "required": true,
-            "value": "EN"
-        },
-        "MAX_SIZE": {
-            "description": "Set maximum media file sending size. Type size in MB. To best performance keep 90mb.",
-            "required": true,
-            "value": "90"
-        },
+            "value": "SI"
+       
         "MENU": {
             "description": "Set your command to get full command list.",
             "required": true,
-            "value": "panel"
+            "value": "tima"
         },
         "MUTE_MESSAGE": {
             "description": "The message that appears when typing the '.mute' command. If you do not want to change it, keep 'default'.",
@@ -185,11 +180,6 @@
         "HEROKU_APP_NAME": {
             "description": "Use the same App name as first.",
             "required": true
-        },
-        "DEBUG": {
-            "description": "If you do not know this. Give it up.",
-            "required": true,
-            "value": "false"
         },
         "REMOVE_BG_API_KEY": {
             "description": "Here you, go to the website remove.bg and sign up and get an API key. Leave the API key in this space.",
