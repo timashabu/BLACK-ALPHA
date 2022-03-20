@@ -1,20 +1,20 @@
 {
-    "name": "Queen Amdi 3.6.2v",
-    "description": "Queen Amdi is a chat bot for WhatsApp. 💃🏻❤️",
+    "name": "BLACK ALPHA 3.6.2v",
+    "description": "Black Alpha is a user bot for WhatsApp. 💃🏻❤️",
     "keywords": [
-        "Queen Amdi",
+        "BLACK ALPHA",
         "WhatsApp",
         "User Bot",
         "Chat bot",
         "Button bot",
-        "Black Amda"
+        "M.R TIMA
     ],
     "website": "https://amdaniwasa.com",
     "logo": "https://amdaniwasa.com/assets/QAAppjson.gif",
     "success_url": "https://dashboard.heroku.com/apps/",
     "stack": "container",
     "env":{
-        "AMDI_SESSION": {
+        "AlphaSION": {
             "description": "Paste the session code you received after scanning the QR from https://replit.com/@BlackAmda/Queen-Amdi-QR-Code",
             "required": true
         },
