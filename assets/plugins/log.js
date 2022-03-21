@@ -16,9 +16,9 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 */
 
-const QueenAmdi = require('queenamdi-public');
-const Amdi = QueenAmdi.events
-const { MessageType, Mimetype} = require('@blackamda/queenamdi-web-api');
+const BlackAlpha = require('blackalpha-public');
+const Alpha = BlackAlpha.events
+const { MessageType, Mimetype} = require('@m.r tima/blackalpha-web-api');
 const dil = require('axios');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
@@ -33,7 +33,7 @@ const FROM = " From the group with ID, "
 const MSG = "Message: \n\n"
 const SUC = "*Message Successfully Saved to LOG! ✅️*"
 
-Amdi.operate({ pattern: 'log', fromMe: true,  deleteCommand: false,  desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
+Alpha.operate({ pattern: 'log', fromMe: true,  deleteCommand: false,  desc: LOG, warn: ANIM, onlyGroup: true, dontAddCommandList: true}, (async (message, match) => { 
 
     const meta = await message.client.groupMetadata(message.jid)
     const usmeta = message.client.isOnWhatsApp(message.jid)
