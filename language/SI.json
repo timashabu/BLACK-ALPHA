@@ -1,10 +1,10 @@
 {
-    "__AMDIJSON__": true,
+    "__ALPHAJSON__": true,
     "LANGUAGE": "Sinhala",
     "LANGCODE": "sinhala",
-    "AUTHOR": "BlackAmda",
+    "AUTHOR": "M.R TIMA",
     "STRINGS": {
-        "_amdi": {
+        "_alpha": {
             "COMMAND": "විධානය",
             "DESC": "විස්තරය",
             "EXAMPLE": "උදාහරණයක්",
