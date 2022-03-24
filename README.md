@@ -53,16 +53,10 @@
     <img src="https://img.shields.io/github/stars/BlackAmda/QueenAmdi?style=social">
   </a>
 </p>
-
-
-  </a>
-
-  </a>
-  <a href="httsp://github.com/BlackAmda/QueenAmdi">
+</a>
+</a><a href="httsp://github.com/BlackAmda/QueenAmdi">
     <img src="https://img.shields.io/github/languages/top/BlackAmda/QueenAmdi?color=purple&label=Javascript&style=plastic">
-
-  </a>
-  <a href="httsp://github.com/BlackAmda/QueenAmdi">
+</a><a href="httsp://github.com/BlackAmda/QueenAmdi">
     <img src="https://img.shields.io/static/v1?label=Author&message=M.R%20TIMA&color=purple&style=plastic">
 
   </a>
