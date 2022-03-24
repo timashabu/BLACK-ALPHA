@@ -18,7 +18,7 @@
 	<h2>BLACK  ALPHA v6 whatsapp bot (NEW BUTTON BOT) :</h1>
 	
 ### QR CODE
-[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@BlackAmda/Queen-Amdi-QR-Code)
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@timashabuddila/Black-Alpha-QR-Code-#package-lock.json)
 
 ### Deploy New v6 Black Alpha Bot
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/timashabu/BLACK-ALPHA)
