@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://i.ibb.co/r3wmpwr/LOGO.jpg" width="300" height="300">
-  <h1>👸💎BLACK ALPHA BOT👸💎</h1>
+  <h1>🎅🏼💎BLACK ALPHA BOT🎅🏼💎</h1>
 </div>
 <p align="center">
     Makes it easy and fun to use WhatsApp. It is also the first Sinhala user bot for WhatsApp.
@@ -30,7 +30,7 @@
 ----
 
 <p align="center">
-  <a href="httsp://github.com/BlackAmda/QueenAmdi">
+  <a href="">
     <img src="https://img.shields.io/docker/pulls/blackamda/queenamdi?style=flat-square&label=Docker+Pulls">
   </a>
   <a href="https://github.com/BlackAmda/QueenAmdi">
@@ -68,62 +68,19 @@
 
   </a>
   <a href="httsp://github.com/BlackAmda/QueenAmdi">
-    <img src="https://img.shields.io/static/v1?label=Author&message=Black%20Amda&color=purple&style=plastic">
+    <img src="https://img.shields.io/static/v1?label=Author&message=M.R%20TIMA&color=purple&style=plastic">
 
   </a>
   </p>
  <p align="center">
-  <a href="https://wa.me/94757405652">
+  <a href="https://wa.me/94773585511">
     <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-Queen%20Amdi%20Bot-purple&style=plastic">
 
   </a>
 </p>
  
-```
-Queen Amdi bot is an UserBot for WhatsApp That allowing you to get done so many tasks.
-The user is responsible for all possible consequences of misuse.
-This is not a Open-Source project. This is just a project that allow you to get deploy a bot.
-Additionally, it enables plug-in support for users.
-Install their own plugins to the original software and use as they please.
-Usage is entirely the responsibility of the user. The operating system is not responsible.
-HAVE A FUN!
-```
 
 
 
 
-## Queen Amdi Team
 
-<table>
-										<tbody>
-											<tr>
-												<td><a href="httsp://github.com/BlackAmda/"><img src="https://i.ibb.co/r7vZVqw/1-Amda.jpg" width="200" height="200" alt="Black Amda"></a></td>
-												<td><a href="https://www.instagram.com/sinhalaya_official_/"><img src="https://i.ibb.co/tsFBnbx/2-Sasmitha.jpg" width="200" height="200" alt="sᴀsᴍɪᴛʜᴀ"></a></td>
-												<td><a href="https://www.instagram.com/saji_x.x_4/"><img src="https://i.ibb.co/6FZsnvQ/3-Sajiya.jpg" width="200" height="200" alt="ʟɪʟ ʟᴜᴢɪ"></a></td>
-											</tr>
-										</tbody>
-									</table>
-                  <table>
-										<tbody>
-											<tr>
-												<td><a href="https://dinaaofficial.github.io/dina-official/"><img src="https://i.ibb.co/rvYYcVD/4-Dina.jpg" width="200" height="200" alt="ᴍʀ.ᴅɪɴᴀ"></a></td>
-												<td><a href="https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ"><img src="https://i.ibb.co/HzfN8pD/5-Joka.jpg" width="200" height="200" alt="ᴊᴏᴋᴀ ᴛᴀᴍᴀ"></a></td>
-                        <td><a href="httsp://github.com/BlackAmda/"><img src="https://i.ibb.co/bj4LqJh/6-Kapaya.jpg" width="200" height="200" alt="ᴋᴀᴘᴀʏᴀ"></a></td>
-											</tr>
-									</table>
-                  <table>
-										<tbody>
-											<tr>
-												<td><a href="https://www.thinknfree.com/"><img src="https://i.ibb.co/2kHWJBD/7-Zeus.jpg" width="200" height="200" alt="ᴢᴇᴜs"></a></td>
-												<td><a href="httsp://github.com/BlackAmda/"><img src="https://i.ibb.co/x3MjnWn/8-Pancha.jpg" width="200" height="200" alt="ZEYREX"></a></td>
-												<td><a href="httsp://github.com/BlackAmda/"><img src="https://i.ibb.co/ySvhR4J/9-Saiko.jpg" width="200" height="200" alt="sɪɢᴇᴅᴇʀɪᴇɴ"></a></td>
-											</tr>
-										</tbody>
-									</table>
-
-### License
-This project is protected by the `GNU General Public License v3.0.`
-Do not edit copyright messages!
-
-### Disclaimer
-`WhatsApp` name, its variations and logo are registered trademarks on Facebook. We have nothing to do with the registered trademark.
