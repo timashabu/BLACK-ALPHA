@@ -16,16 +16,16 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 */
 
-const QueenAmdi = require('queenamdi-public');
-const Amdi = QueenAmdi.events
-const Build = QueenAmdi.build
+const BlackAlpha = require('blackalpha-public');
+const Alpha = BlackAlpha.events
+const Build = BlackAlpha.build
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
 const got = require('got');
-const {MessageType} = require('@blackamda/queenamdi-web-api');
+const {MessageType} = require('@tima/blackalpha-web-api');
 const sql = require('./sql/greetings');
 const rulesDB = require('./sql/rules');
-const _amdi = QueenAmdi.heroku_
+const _alpha = BlackAlpha.heroku_
 
 const Language = require('../language');
 const Lang = Language.getString('heroku');
@@ -35,7 +35,7 @@ const heroku = new Heroku({
 });
 let baseURI = '/apps/' + Build.HEROKU.APP_NAME;
 
-Amdi.operate({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Alpha.operate({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -44,7 +44,7 @@ Amdi.operate({pattern: 'restart', fromMe: true, desc: Lang.RESTART_DESC, dontAdd
     });
 }));
 
-Amdi.operate({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC, dontAddCommandList: true, deleteCommand: false}, (async(message, match) => {
+Alpha.operate({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC, dontAddCommandList: true, deleteCommand: false}, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -60,7 +60,7 @@ Amdi.operate({pattern: 'shutdown', fromMe: true, desc: Lang.SHUTDOWN_DESC, dontA
 }));
 
 
-Amdi.operate({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Alpha.operate({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
     heroku.get('/account').then(async (account) => {
         // have encountered some issues while calling this API via heroku-client
@@ -91,10 +91,10 @@ Amdi.operate({pattern: 'dyno', fromMe: true, desc: Lang.DYNO_DESC, dontAddComman
     });
 }));
 
-Amdi.operate({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async(message, match) => {
+Alpha.operate({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
-    if (match[1] === 'ANTIBAD' || match[1] === 'ANTIBUG' || match[1] === 'ANTILINK' || match[1] === 'LANGUAGE' || match[1] === 'WORK_TYPE') return await message.client.sendMessage(message.jid,'```Use``` *.settings* command to change.', MessageType.text);
+    if (match[1] === 'ANTIBAD' || match[1] === 'ANTIBUG' || match[1] === 'ANTILINK' || match[1] === 'LANGUAGE' || match[1] === 'WORK_TYPE') return await message.client.sendMessage(message.jid,'```Use``` *.heroku* command to change.', MessageType.text);
 
     if ((varKey = match[1].split('=')[0]) && (varValue = match[1].split('=')[1])) {
         await heroku.patch(baseURI + '/config-vars', {
@@ -110,7 +110,7 @@ Amdi.operate({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, don
 }));
 
 
-Amdi.operate({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Alpha.operate({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -132,7 +132,7 @@ Amdi.operate({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, don
 
 }));
 
-Amdi.operate({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Alpha.operate({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -145,12 +145,12 @@ Amdi.operate({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC, don
     });
 }));
 
-Amdi.operate({pattern: 'allconfig', fromMe: true, desc: Lang.GETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (amdiMSG) => {
-    await _amdi.allConfig( amdiMSG )
+Alpha.operate({pattern: 'allconfig', fromMe: true, desc: Lang.GETVAR_DESC, dontAddCommandList: true, deleteCommand: false}, (async (alphaMSG) => {
+    await _alpha.allConfig( alphaaMSG )
 }));
 
 
-Amdi.operate({pattern: 'setup ?(.*)', fromMe: true, desc: Lang.SETUP_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
+Alpha.operate({pattern: 'setup ?(.*)', fromMe: true, desc: Lang.SETUP_DESC, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.NO_TYPE, MessageType.text); 
@@ -160,7 +160,7 @@ Amdi.operate({pattern: 'setup ?(.*)', fromMe: true, desc: Lang.SETUP_DESC, dontA
     }
     else if (match[1] == 'ban' && message.reply_message) {
         await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
-        await new Promise(r => setTimeout(r, 1200));
+        await new Promise(r => setTimeout(r, 1500));
         await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', { 
             body: { 
