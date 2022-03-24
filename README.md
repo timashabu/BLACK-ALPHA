@@ -54,13 +54,8 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="httsp://github.com/BlackAmda/QueenAmdi">
-    <img src="https://img.shields.io/github/repo-size/BlackAmda/QueenAmdi?color=purple&label=Repo%20Size&style=plastic">
 
   </a>
-  <a href="httsp://github.com/BlackAmda/QueenAmdi">
-    <img src="https://img.shields.io/github/license/BlackAmda/QueenAmdi?color=purple&label=License&style=plastic">
 
   </a>
   <a href="httsp://github.com/BlackAmda/QueenAmdi">
@@ -74,7 +69,7 @@
   </p>
  <p align="center">
   <a href="https://wa.me/94773585511">
-    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-Queen%20Amdi%20Bot-purple&style=plastic">
+    <img src="https://img.shields.io/badge/Contact%20Me%20On%20Whatsapp-Black%20Alpha%20Bot-purple&style=plastic">
 
   </a>
 </p>
